@@ -20,18 +20,6 @@ index 2d72083..30b69da 100644
  
  /**
   *	touch_atime	-	update the access time
-diff --git a/fs/namei.c b/fs/namei.c
-index a378418..370d787 100644
---- a/fs/namei.c
-+++ b/fs/namei.c
-@@ -276,6 +276,7 @@ int check_acl(struct inode *inode, int mask)
- 
- 	return -EAGAIN;
- }
-+EXPORT_SYMBOL(check_acl);
- 
- /*
-  * This does the basic permission checking
 diff --git a/fs/namespace.c b/fs/namespace.c
 index 182bc41..c88e101 100644
 --- a/fs/namespace.c
